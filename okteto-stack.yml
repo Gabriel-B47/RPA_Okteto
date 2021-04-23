@@ -1,4 +1,4 @@
-name: rpa_project
+name: rpa-project
 services:
   rbas-db:
     image: postgres:11
@@ -12,9 +12,9 @@ services:
       cpu: 100m
       memory: 128Mi
   
-  simple-rbas:
+  rpa-project:
     public: true
-      image:okteto.dev/rpa_project:latest
+    image: gabrielb47/rpa-project:latest
     build: .
     replicas: 1
     command: bash -c "gunicorn rpa_project.wsgi --reload -b 0.0.0.0:8000"
@@ -23,10 +23,7 @@ services:
     resources:
       cpu: 100m
       memory: 128Mi
-    env_file:
-        - .env
     environment:
-        - DJANGO_READ_DOT_ENV_FILE=true
         - DATABASE_URL=postgresql://pguser:pgpass@notes-db:5432/pgdb
         - COOKIE_SECURE=true
         - DEBUG=false
