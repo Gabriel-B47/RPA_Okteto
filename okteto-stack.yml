@@ -2,10 +2,10 @@ name: rpa-project
 services:
   rpa-project:
     public: true
-    image: gabrielb47/rpa-project:latest
+    image: gabrielb47/rpa_project:latest
     build: .
     replicas: 1
-    command: bash -c "gunicorn rpa_project.wsgi --reload -b 0.0.0.0:8000"
+    command: bash -c 'gunicorn rpa_project.wsgi --reload -b 0.0.0.0:8000'
     ports:
       - 8000
     resources:

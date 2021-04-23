@@ -1,4 +1,4 @@
-FROM python:3.9-buster
+FROM python:3
 
 RUN mkdir /rpa_project
 RUN pip install -U pip
@@ -15,4 +15,4 @@ ENV PYTHONPATH=.
 COPY . /rpa_project/
 
 WORKDIR /rpa_project
-CMD ["run_web.sh"]
+CMD ["bash", "run_web.sh"]

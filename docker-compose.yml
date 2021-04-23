@@ -1,0 +1,6 @@
+name: web
+command: ["sh", "-c", "./run_web.sh"]
+sync:
+  - .:/app
+forward:
+  - 8080:8080

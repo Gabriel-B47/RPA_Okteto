@@ -25,12 +25,13 @@ SECRET_KEY = 'django-insecure-_2w#3jf*=4+jaz_hv9y7^z84n5dwqqd&^exw=j^%-y#ry3ih7@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['rpa-project-gabriel-b47.cloud.okteto.net', '8000', '8080', '127.0.0.1']
+ALLOWED_HOSTS = ['rpa-project-gabriel-b47.cloud.okteto.net', 'localhost', '8080', 'http://127.0.0.1:8000/', '127.0.0.1']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'polls.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
