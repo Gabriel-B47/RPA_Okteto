@@ -1,0 +1,4 @@
+name: rpa-project
+image: okteto/python:3
+workdir: /rpa_project
+command: ["bash"]

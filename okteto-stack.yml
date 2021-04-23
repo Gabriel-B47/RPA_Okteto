@@ -1,17 +1,5 @@
 name: rpa-project
 services:
-  rbas-db:
-    image: postgres:11
-    ports:
-      - 5432
-    environment:
-      - POSTGRES_USER=pguser
-      - POSTGRES_PASSWORD=pgpass
-      - POSTGRES_DB=pgdb
-    resources:
-      cpu: 100m
-      memory: 128Mi
-  
   rpa-project:
     public: true
     image: gabrielb47/rpa-project:latest
