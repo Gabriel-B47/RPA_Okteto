@@ -1,4 +1,4 @@
-django==3
+django==3.2
 djangorestframework
 django-environ
 psycopg2-binary

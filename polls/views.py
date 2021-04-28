@@ -12,8 +12,8 @@ class IndexView(generic.ListView):
     context_object_name = 'latest_question_list'
 
     def get_queryset(self):
-        return Question.objects.filter(pub_date__lte=timezone.now()).order_by('-pub_date')[:5]
-
+        """Return the last five published questions."""
+        return Question.objects.order_by('-pub_date')[:5]   
 
 class DetailView(generic.DetailView):
     model = Question
@@ -34,7 +34,7 @@ def vote(request, question_id):
     except (KeyError, Choice.DoesNotExist):
         return render(request, 'polls/detail.html', {
             'question': question,
-            'error_message': "No seleccionaste una opción.",
+            'error_message': "Option not selected.",
         })
     else:
         selected_choice.votes += 1

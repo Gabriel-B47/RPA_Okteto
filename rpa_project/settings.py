@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-_2w#3jf*=4+jaz_hv9y7^z84n5dwqqd&^exw=j^%-y#ry3ih7@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['rpa-project-gabriel-b47.cloud.okteto.net', 'localhost', '8080', 'http://127.0.0.1:8000/', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'rpa_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': str(BASE_DIR / "db.sqlite3"),
     }
 }
 

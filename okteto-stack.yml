@@ -1,8 +1,7 @@
 name: rpa-project
 services:
-  rpa-project:
+  polls:
     public: true
-    image: gabrielb47/rpa_project:latest
     build: .
     replicas: 1
     command: bash -c 'gunicorn rpa_project.wsgi --reload -b 0.0.0.0:8000'
