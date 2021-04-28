@@ -1,6 +1,6 @@
 # RPA_Okteto
 Prueba técnica para RPA realizada por Agustín Borba.
-El proyecto es realizado sobre el [Tutorial de Django basico oficíal](https://docs.djangoproject.com/en/3.2/intro/tutorial01/)
+El proyecto es realizado sobre el [Tutorial de Django basico oficíal](https://docs.djangoproject.com/en/3.2/intro/tutorial01/).
 
 
 # Notas
