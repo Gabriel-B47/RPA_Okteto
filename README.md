@@ -4,6 +4,7 @@ El proyecto es realizado sobre el [Tutorial de Django basico oficíal](https://d
 
 # Gifs
 Okteto Up. Creando ambiente de desarrollo.
+
 ![](https://user-images.githubusercontent.com/42798627/116486528-40113e80-a864-11eb-83e1-1682e09b91a9.gif)
 
 Deployment en Okteto.
