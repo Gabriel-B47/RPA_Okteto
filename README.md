@@ -15,5 +15,5 @@ Deployment en Okteto.
 [Link a los videos](https://drive.google.com/drive/folders/1dbmebGeXvao1HBVy6-PN7qNxqN7C-PnT?usp=sharing) mostrados arriba en formato .gif
 
 # Notas
-Docker-compose.yml no se esta utilizando activamente en el deploy de Okteto siendo que okteto-stack.yml permite omitir la definición de una imagen al definir una build.
+Docker-compose.yml no se esta utilizando activamente en el deploy de Okteto siendo que okteto-stack.yml permite omitir la definición de una imagen al definir una build, sin embargo decidí conservarlo en el proyecto.
 
